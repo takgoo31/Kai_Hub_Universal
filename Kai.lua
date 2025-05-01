@@ -1,6 +1,4 @@
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
+
 --[[
 Credits goes to REDz.
 And you can find more here! [This is v5 version]
@@ -22,8 +20,13 @@ local Tab1 = Window:MakeTab({"Tab 1", "cool"})
 
 --Buttons
 
-Tab1:AddButton({"Print", function()
-print("Hello World!")
+Tab1:AddButton({"Redz Hub", function()
+local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
 end})
 
 local Toggle1 = Tab1:AddToggle({
