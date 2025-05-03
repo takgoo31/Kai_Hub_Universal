@@ -34,13 +34,11 @@ do
     })
 
 
--- Para sa mga pogi!
     Tabs.Main:AddParagraph({
         Title = "Kai Hub",
         Content = "Hello this is Kai Team! Thank you for using our scripts."
     })
 
--- Discord server namin
     Tabs.Main:AddButton({
         Title = "Discord Server",
         Description = "Join to our Discord Community.",
