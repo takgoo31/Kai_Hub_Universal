@@ -18,37 +18,6 @@ local Tabs = {
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
--- Hide the Fluent window initially
-Window:Hide()
-
--- Safe GUI parent (executor-friendly)
-local guiParent = gethui and gethui() or (syn and syn.protect_gui and syn.protect_gui(Instance.new("ScreenGui"))) or game:GetService("CoreGui")
-
--- Create a container for the logo button
-local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "KaiHubLogoGui"
-screenGui.IgnoreGuiInset = true
-screenGui.ResetOnSpawn = false
-screenGui.Parent = guiParent
-
--- Create the logo button
-local logoButton = Instance.new("ImageButton")
-logoButton.Name = "KaiHubLogoButton"
-logoButton.Size = UDim2.new(0, 50, 0, 50)
-logoButton.Position = UDim2.new(0, 15, 0, 15)
-logoButton.Image = "https://tinyurl.com/y7j3zknb"
-logoButton.BackgroundTransparency = 1
-logoButton.Parent = screenGui
-
--- Toggle visibility of Fluent window
-logoButton.MouseButton1Click:Connect(function()
-    if Window.Visible then
-        Window:Hide()
-    else
-        Window:Show()
-    end
-end)
-
 local Options = Fluent.Options
 
 do
@@ -260,3 +229,33 @@ Fluent:Notify({
 -- You can use the SaveManager:LoadAutoloadConfig() to load a config
 -- which has been marked to be one that auto loads!
 SaveManager:LoadAutoloadConfig()
+
+-- Hide the Fluent window initially
+Window:Hide()
+-- Safe GUI parent (executor-friendly)
+local guiParent = gethui and gethui() or (syn and syn.protect_gui and syn.protect_gui(Instance.new("ScreenGui"))) or game:GetService("CoreGui")
+
+-- Create a container for the logo button
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "KaiHubLogoGui"
+screenGui.IgnoreGuiInset = true
+screenGui.ResetOnSpawn = false
+screenGui.Parent = guiParent
+
+-- Create the logo button
+local logoButton = Instance.new("ImageButton")
+logoButton.Name = "KaiHubLogoButton"
+logoButton.Size = UDim2.new(0, 50, 0, 50)
+logoButton.Position = UDim2.new(0, 15, 0, 15)
+logoButton.Image = "https://tinyurl.com/y7j3zknb"
+logoButton.BackgroundTransparency = 1
+logoButton.Parent = screenGui
+
+-- Toggle visibility of Fluent window
+logoButton.MouseButton1Click:Connect(function()
+    if Window.Visible then
+        Window:Hide()
+    else
+        Window:Show()
+    end
+end)
