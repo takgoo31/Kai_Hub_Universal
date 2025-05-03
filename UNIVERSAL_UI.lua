@@ -38,7 +38,6 @@ do
         Title = "Kai Hub Community",
         Description = "Join to our COMMUNITY! (CLICK HERE)",
         Callback = function()
-      })
             Window:Dialog({
                 Title = "Kai Hub | Universal",
                 Content = "Copy our Discord Server Link",
@@ -62,4 +61,10 @@ do
 
 
 
-  
+  Window:SelectTab(1)
+
+Fluent:Notify({
+    Title = "Kai Hub | Universal",
+    Content = "The script has been loaded successfully.",
+    Duration = 15
+})
