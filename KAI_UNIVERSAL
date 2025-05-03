@@ -15,7 +15,12 @@ local Window = Fluent:CreateWindow({
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "house" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
+    Player = Window:AddTab({ Title = "Player", Icon = "" }),
+    Blox Fruits = Window:AddTab({ Title = "Blox Fruits", Icon = "" }),
+    Pet Simulator = Window:AddTab({ Title = "Pet Simulator", Icon = "" }),
+    Bee Swarm: Simulator = Window:AddTab({ Title = "Bee Swarm: Simulator, Icon = "" }),
+    Dead Rails = Window:AddTab({ Title = "Dead Rails", Icon = "" })
 }
 
 local Options = Fluent.Options
@@ -29,13 +34,13 @@ do
     })
 
 
-
+-- Para sa mga pogi!
     Tabs.Main:AddParagraph({
         Title = "Kai Hub",
         Content = "Hello this is Kai Team! Thank you for using our scripts."
     })
 
-
+-- Discord server namin
     Tabs.Main:AddButton({
         Title = "Discord Server",
         Description = "Join to our Discord Community.",
