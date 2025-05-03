@@ -43,8 +43,7 @@ do
         Callback = function()
     local text = "https://discord.com/invite/wDMPK3QAmY"
     love.system.setClipboardText(text)
-                end
-                
+            end
             Window:Dialog({
                 Title = "Kai Hub | Universal",
                 Content = "Copy Discord Server Link",
