@@ -42,7 +42,10 @@ Thank you for using our scripts! "
         Title = "Kai Hub | Discord Server",
         Description = "Join to our community.",
         Callback = function()
-                
+    local text = "https://discord.com/invite/wDMPK3QAmY"
+    love.system.setClipboardText(text)
+end
+)}
 
                 
     local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Toggle", Default = false })
