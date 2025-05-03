@@ -47,8 +47,9 @@ do
                     {
                         Title = "Copy",
                         Callback = function()
-                            print("Copied!")
-                        end
+    local text = "https://discord.com/invite/wDMPK3QAmY"
+    love.system.setClipboardText(text)
+     end
                     },
                     {
                         Title = "Cancel",
