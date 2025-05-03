@@ -3,3 +3,4 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 
 local Window = Library.CreateLib("Kai Hub | Universal", "DarkTheme")
 local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Random TEST!")
