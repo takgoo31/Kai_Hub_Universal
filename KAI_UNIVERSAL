@@ -36,14 +36,10 @@ do
     })
 
 
-
     Tabs.Main:AddButton({
         Title = "Discord Server",
         Description = "Join to our Discord Community.",
         Callback = function()
-    local text = "https://discord.com/invite/wDMPK3QAmY"
-    love.system.setClipboardText(text)
-            end
             Window:Dialog({
                 Title = "Kai Hub | Universal",
                 Content = "Copy Discord Server Link",
