@@ -15,12 +15,7 @@ local Window = Fluent:CreateWindow({
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "house" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "" }),
-    Blox Fruits = Window:AddTab({ Title = "Blox Fruits", Icon = "" }),
-    Pet Simulator = Window:AddTab({ Title = "Pet Simulator", Icon = "" }),
-    Bee Swarm: Simulator = Window:AddTab({ Title = "Bee Swarm: Simulator, Icon = "" }),
-    Dead Rails = Window:AddTab({ Title = "Dead Rails", Icon = "" })
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
 local Options = Fluent.Options
