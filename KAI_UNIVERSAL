@@ -28,7 +28,6 @@ do
         Duration = 32 -- Set to nil to make the notification not disappear
     })
 
-
     Tabs.Main:AddParagraph({
         Title = "Kai Hub",
         Content = "Hello this is Kai Team! Thank you for using our scripts."
