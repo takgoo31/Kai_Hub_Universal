@@ -28,12 +28,12 @@ do
         SubContent = "READ THIS!: if you close the ui, re-execute the script to load the ui again!!!", -- Optional
         Duration = 32 -- Set to nil to make the notification not disappear
     })
---Paragraphs
+
     Tabs.Main:AddParagraph({
         Title = "Kai Hub",
         Content = "Hello this is Kai Team! Thank you for using our scripts."
     })
-    Tabs.Profile:AddParagraph({
+    Tabs.Player:AddParagraph({
         Title = "Test",
         Content = "Testetststs"
     })
