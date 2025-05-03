@@ -103,11 +103,6 @@ end
     end)
 end
 
-Local tab = Window:AddTab({
-Title = "exemple",
-Icon = "rbxassetid://10723407389"
-})
-
 -- Addons:
 -- SaveManager (Allows you to have a configuration system)
 -- InterfaceManager (Allows you to have a interface managment system)
