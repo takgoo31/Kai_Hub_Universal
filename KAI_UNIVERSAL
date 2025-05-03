@@ -16,7 +16,6 @@ local Window = Fluent:CreateWindow({
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "house" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
-    Player = Window:AddTab({ Title = "Player", Icon = "bot" })
 }
 
 local Options = Fluent.Options
@@ -32,10 +31,6 @@ do
     Tabs.Main:AddParagraph({
         Title = "Kai Hub",
         Content = "Hello this is Kai Team! Thank you for using our scripts."
-    })
-    Tabs.Player:AddParagraph({
-        Title = "Test",
-        Content = "Testetststs"
     })
 
     Tabs.Main:AddButton({
