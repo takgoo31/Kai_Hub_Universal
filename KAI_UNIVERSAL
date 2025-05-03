@@ -47,7 +47,7 @@ do
                     {
                         Title = "Copy",
                         Callback = function()
-                       writeToClipboard("https://discord.gg/wDMPK3QAmY")
+                       setclipboard("https://discord.gg/wDMPK3QAmY")
 end
                     },
                     {
