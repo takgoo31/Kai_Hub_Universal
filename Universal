@@ -45,6 +45,26 @@ Thank you for using our scripts! "
     local text = "https://discord.com/invite/wDMPK3QAmY"
     love.system.setClipboardText(text)
 end
+Window:Dialog({
+                Title = "Copy",
+                Content = "Copy to Clipboard",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                            print("Confirmed.")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled.")
+                        end
+                    }
+                }
+            })
+        end
+    })
 )}
 
                 
