@@ -31,30 +31,34 @@ do
 
 
     Tabs.Main:AddParagraph({
-        Title = "",
-        Content = "This is a paragraph.\nSecond line!"
+        Title = "Kai Hub",
+        Content = "Hello this is Kai Team! Thank you for using our scripts!"
     })
 
 
 
     Tabs.Main:AddButton({
-        Title = "Button",
-        Description = "Very important button",
+        Title = "Discord Server",
+        Description = "Join to our Discord Community.",
         Callback = function()
+    local text = "https://discord.com/invite/wDMPK3QAmY"
+    love.system.setClipboardText(text)
+                end
+                
             Window:Dialog({
-                Title = "Title",
-                Content = "This is a dialog",
+                Title = "Kai Hub | Universal",
+                Content = "Copy Discord Server Link",
                 Buttons = {
                     {
-                        Title = "Confirm",
+                        Title = "Copy",
                         Callback = function()
-                            print("Confirmed the dialog.")
+                            print("Copied!")
                         end
                     },
                     {
                         Title = "Cancel",
                         Callback = function()
-                            print("Cancelled the dialog.")
+                            print("Cancelled.")
                         end
                     }
                 }
