@@ -22,17 +22,17 @@ local Options = Fluent.Options
 
 do
     Fluent:Notify({
-        Title = "Notification",
-        Content = "This is a notification",
-        SubContent = "SubContent", -- Optional
-        Duration = 5 -- Set to nil to make the notification not disappear
+        Title = "Welcome to Kai Hub | Universal",
+        Content = "Explore our script hub! Thank you for using our script!",
+        SubContent = "READ THIS!: if you close the ui, re-execute the script to load the ui again!!!", -- Optional
+        Duration = 12 -- Set to nil to make the notification not disappear
     })
 
 
 
     Tabs.Main:AddParagraph({
         Title = "Kai Hub",
-        Content = "Hello this is Kai Team! Thank you for using our scripts!"
+        Content = "Hello this is Kai Team! Thank you for using our scripts."
     })
 
 
