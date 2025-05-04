@@ -30,11 +30,11 @@ Rayfield:Notify({
    Title = "Kai Hub | Universal",
    Content = "Welcome to Kai Hub!",
    Duration = 8.5,
-   Image = 4483362458,
+   Image = ,
 })
 --Tabs
  local MainTab = Window:CreateTab("Main", 10723407389) -- Title, Image
- local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
+ local PlayerTab = Window:CreateTab("Player", circle-user) -- Title, Image
  local SettingsTab = Window:CreateTab("Settings", 10734950309) -- Title, Image
  local BloxFruitsTab = Window:CreateTab("Blox Fruits", 10709761889) -- Title, Image
 
