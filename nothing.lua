@@ -32,7 +32,16 @@ local Window = Rayfield:CreateWindow({
  local SettingsTab = Window:CreateTab("Settings", 10734950309) -- Title, Image
  local BloxFruitsTab = Window:CreateTab("Blox Fruits", 10709761889) -- Title, Image
 
--- Sliders
+-- MainTab 
+local Section = MainTab:CreateSection("Discord Community")
+local Button = MainTab:CreateButton({
+   Name = "Join to our Discord Server!",
+   Description = "Copy our Discord Server Link.",
+   Callback = function()
+   setclipboard("https://discord.com/invite/wDMPK3QAmY")
+   end,
+})
+-- PlayerTab
  local Slider = PlayerTab:CreateSlider({
     Name = "WalkSpeed",
     Range = {1, 100},
