@@ -41,7 +41,7 @@ local Button = MainTab:CreateButton({
    setclipboard("https://discord.com/invite/wDMPK3QAmY")
    end,
 })
-local Label = Tab:CreateLabel("Copy our discord server link", 10723426722, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+local Label = MainTab:CreateLabel("Copy our discord server link", 10723426722, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 -- PlayerTab
  local Slider = PlayerTab:CreateSlider({
     Name = "WalkSpeed",
