@@ -32,6 +32,12 @@ Rayfield:Notify({
    Duration = 8.5,
    Image = 10747371901,
 })
+Rayfield:Notify({
+   Title = "Kai Hub | STAFFS",
+   Content = "Kai Team: Takgoo, Kaizy, Chii",
+   Duration = 10.5,
+   Image = 10734951847,
+})
 --Tabs
  local MainTab = Window:CreateTab("Main", 10723407389) -- Title, Image 
  local PlayerTab = Window:CreateTab("Player", 10747373176) -- Title, Image 
@@ -163,6 +169,7 @@ local Paragraph = GameScriptsTab:CreateParagraph({Title = "READ : GAME SCRIPTS",
 local BFRUITSection = GameScriptsTab:CreateSection("BLOX FRUITS")
 local Button = GameScriptsTab:CreateButton({
    Name = "Redz Hub",
+   Icon = "rewind",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
    end,
