@@ -12,7 +12,7 @@ local Window = Rayfield:CreateWindow({
     Discord = {
        Enabled = true,
        Invite = "wDMPK3QAmY", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
-       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+       RememberJoins = false -- Set this to false to make them join the discord every time they load it up
     },
     KeySystem = false, -- Set this to true to use our key system
     KeySettings = {
@@ -27,16 +27,18 @@ local Window = Rayfield:CreateWindow({
  })
 
 --Tabs
- local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
+ local MainTab = Window:CreateTab("Main", 10723407389) -- Title, Image
  local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
- 
+ local SettingsTab = Window:CreateTab("Settings", 10734950309) -- Title, Image
+ local BloxFruitsTab = Window:CreateTab("Blox Fruits", 10709761889) -- Title, Image
 
+-- Sliders
  local Slider = PlayerTab:CreateSlider({
     Name = "WalkSpeed",
     Range = {1, 100},
     Increment = 1,
     Suffix = "Speed",
-    CurrentValue = 100,
+    CurrentValue = 10,
     Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(Value)
      game.Players.LocalPlayer.Character:SetAttribute("SpeedMultiplier", Value)
