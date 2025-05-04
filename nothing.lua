@@ -116,6 +116,7 @@ local DashSlider = PlayerTab:CreateSlider({
     end,
 })
 -- Jump Height
+-- PlayerTab
 local JumpHeightEnabled = false
 local JumpHeightValue = 50  -- Default Jump Power
 
@@ -149,3 +150,4 @@ local JumpSlider = PlayerTab:CreateSlider({
         end
     end,
 })
+
