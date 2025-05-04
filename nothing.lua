@@ -160,10 +160,10 @@ local JumpSlider = PlayerTab:CreateSlider({
 
 
 -- Game Scripts
-local READSection = Scripts:CreateSection("READ THIS!!!")
-local Paragraph = Scripts:CreateParagraph({Title = "READ : GAME SCRIPTS", Content = "Game Scripts will be in this Tab. Just find the game that you want :) MORE GAMES SUPPORT SOON!"})
-local BFRUITSection = Scripts:CreateSection("BLOX FRUITS")
-local Button = Scripts:CreateButton({
+local READSection = GameScripts:CreateSection("READ THIS!!!")
+local Paragraph = GameScripts:CreateParagraph({Title = "READ : GAME SCRIPTS", Content = "Game Scripts will be in this Tab. Just find the game that you want :) MORE GAMES SUPPORT SOON!"})
+local BFRUITSection = GameScripts:CreateSection("BLOX FRUITS")
+local Button = GameScripts:CreateButton({
    Name = "Redz Hub",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
