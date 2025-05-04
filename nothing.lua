@@ -46,39 +46,41 @@ local Paragraph = MainTab:CreateParagraph({Title = "Kai Team", Content = "Hello!
 local Paragraph = MainTab:CreateParagraph({Title = "Kai Hub Updates!", Content = "Universal Script (v1.0.0)   [+] Blox Fruits [+] Settings [+] and MORE!"})
 
 -- PlayerTab
- local WalkSpeedEnabled = false
+-- PlayerTab
+local WalkSpeedEnabled = false
 local WalkSpeedValue = 16
 
 -- Toggle for enabling WalkSpeed
-local Toggle = Tab:CreateToggle({
-   Name = "Enable WalkSpeed",
-   CurrentValue = false,
-   Flag = "EnableWalkSpeed", -- Unique ID for saving/loading
-   Callback = function(Value)
-       WalkSpeedEnabled = Value
-       if Value then
-           game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = WalkSpeedValue
-       else
-           game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-       end
-   end,
+local Toggle = PlayerTab:CreateToggle({
+    Name = "Enable WalkSpeed",
+    CurrentValue = false,
+    Flag = "EnableWalkSpeed", -- Unique ID for saving/loading
+    Callback = function(Value)
+        WalkSpeedEnabled = Value
+        if Value then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = WalkSpeedValue
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        end
+    end,
 })
 
 -- Slider for controlling WalkSpeed
 local Slider = PlayerTab:CreateSlider({
-   Name = "WalkSpeed",
-   Range = {16, 100},
-   Increment = 1,
-   Suffix = "Speed",
-   CurrentValue = 16,
-   Flag = "WalkSpeedSlider", -- Unique ID for saving/loading
-   Callback = function(Value)
-       WalkSpeedValue = Value
-       if WalkSpeedEnabled then
-           game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-       end
-   end,
+    Name = "WalkSpeed",
+    Range = {16, 100},
+    Increment = 1,
+    Suffix = "Speed",
+    CurrentValue = 16,
+    Flag = "WalkSpeedSlider", -- Unique ID for saving/loading
+    Callback = function(Value)
+        WalkSpeedValue = Value
+        if WalkSpeedEnabled then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+        end
+    end,
 })
+
 
  local Slider = PlayerTab:CreateSlider({
     Name = "Dash length",
