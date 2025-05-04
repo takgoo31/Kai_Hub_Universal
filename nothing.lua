@@ -44,8 +44,7 @@ local DiscordButton = MainTab:CreateButton({
 local KaiSection = MainTab:CreateSection("Kai Hub | UNIVERSAL")
 local KaiParagraph = MainTab:CreateParagraph({
         Title = "Welcome to Kai Hub!", 
-        Content = "Enjoy using our scripts, more updates and game-script will be added soon! To support us join to our discord community!
-        Happy Scriping!"
+        Content = "Enjoy using our scripts, more updates and game-script will be added soon! To support us join to our discord community. Happy Scriping!"
     })
 local UpdatesParagraph = MainTab:CreateParagraph({
         Title = "Kai Hub | Universal: UPDATES"
