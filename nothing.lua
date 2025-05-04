@@ -49,9 +49,7 @@ local KaiParagraph = MainTab:CreateParagraph({
     })
 local UpdatesParagraph = MainTab:CreateParagraph({
         Title = "Kai Hub | Universal: UPDATES"
-        Content = "Current Version: 1.0.0
-        [+] Blox Fruits
-        [+] Settings"
+        Content = "Current Version: 1.0.0 [+] Blox Fruit [+] Settings"
     })
 -- PlayerTab
  local Slider = PlayerTab:CreateSlider({
