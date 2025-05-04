@@ -81,7 +81,7 @@ local Toggle = PlayerTab:CreateToggle({
 -- Slider for controlling WalkSpeed
 local Slider = PlayerTab:CreateSlider({
     Name = "WalkSpeed",
-    Range = {16, 100},
+    Range = {16, 450},
     Increment = 1,
     Suffix = "Speed",
     CurrentValue = 16,
@@ -165,10 +165,10 @@ local JumpSlider = PlayerTab:CreateSlider({
 })
 -- Game Scripts
 local READSection = GameScriptsTab:CreateSection("READ THIS!!!")
-local Paragraph = GameScriptsTab:CreateParagraph({Title = "READ : GAME SCRIPTS", Content = "Game Scripts will be in this Tab. Just find the game that you want :) MORE GAMES SUPPORT SOON!"})
+local Paragraph = GameScriptsTab:CreateParagraph({Title = "READ : GAME SCRIPTS", Content = "Game Scripts will be in this Tab. Just find the game that you want and click it! MORE GAMES SUPPORT SOON!"})
 local BFRUITSection = GameScriptsTab:CreateSection("BLOX FRUITS")
 local Button = GameScriptsTab:CreateButton({
-   Name = "Redz Hub",
+   Name = "REDZ HUB",
    Icon = "rewind",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
