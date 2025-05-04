@@ -36,7 +36,7 @@ Rayfield:Notify({
    Title = "Kai Hub | STAFFS",
    Content = "Kai Team: Takgoo, Kaizy, Chii",
    Duration = 7.5,
-   Image = 10734951847,
+   Image = 10723405360,
 })
 --Tabs
  local MainTab = Window:CreateTab("Main", 10723407389) -- Title, Image 
