@@ -115,15 +115,37 @@ local DashSlider = PlayerTab:CreateSlider({
         end
     end,
 })
+-- Jump Height
+local JumpHeightEnabled = false
+local JumpHeightValue = 50  -- Default Jump Power
 
- local Slider = PlayerTab:CreateSlider({
+-- Toggle for enabling Jump Height modification
+local JumpToggle = PlayerTab:CreateToggle({
+    Name = "Enable Jump Height",
+    CurrentValue = false,
+    Flag = "EnableJumpHeight", -- Unique ID for saving/loading
+    Callback = function(Value)
+        JumpHeightEnabled = Value
+        if Value then
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = JumpHeightValue
+        else
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50 -- Default Jump Power when toggled off
+        end
+    end,
+})
+
+-- Slider for controlling Jump Height
+local JumpSlider = PlayerTab:CreateSlider({
     Name = "Jump Height",
     Range = {10, 500},
     Increment = 1,
     Suffix = "Height",
-    CurrentValue = 10,
-    Flag = "Slider3", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    CurrentValue = 50,
+    Flag = "JumpHeightSlider", -- Unique ID for saving/loading
     Callback = function(Value)
-     game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+        JumpHeightValue = Value
+        if JumpHeightEnabled then
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+        end
     end,
- })
+})
