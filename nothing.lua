@@ -35,8 +35,8 @@ Rayfield:Notify({
 --Tabs
  local MainTab = Window:CreateTab("Main", 10723407389) -- Title, Image 
  local PlayerTab = Window:CreateTab("Player", 10747373176) -- Title, Image 
+ local GameScriptsTab = Window:CreateTab("Scripts", 10723395215) -- Title, Image 
  local SettingsTab = Window:CreateTab("Settings", 10734950309) -- Title, Image
- local BloxFruitsTab = Window:CreateTab("Blox Fruits", 10709761889) -- Title, Image 
  
 -- MainTab 
 local DiscordSection = MainTab:CreateSection("Discord Community")
@@ -157,4 +157,20 @@ local JumpSlider = PlayerTab:CreateSlider({
         end
     end,
 })
+
+
+-- Game Scripts
+local READSection = Tab:CreateSection("READ THIS!!!")
+local Paragraph = Tab:CreateParagraph({Title = "READ : GAME SCRIPTS", Content = "Game Scripts will be in this Tab. Just find the game that you want :) MORE GAMES SUPPORT SOON!"})
+local BFRUITSection = Tab:CreateSection("BLOX FRUITS")
+local Button = Tab:CreateButton({
+   Name = "Redz Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
+   end,
+})
+
+
+
+
 
