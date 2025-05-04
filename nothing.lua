@@ -42,8 +42,8 @@ local DiscordButton = MainTab:CreateButton({
 })
 
 local KaiSection = MainTab:CreateSection("Kai Hub | UNIVERSAL")
-local KaiParagraph = MainTab:CreateParagraph({Title = "Kai Team", Content = "Hello! Thank you for using our scripts. If you want to be updated on our scripts, join to our Discord Community."})
-local UpdatesParagraph = MainTab:CreateParagraph({Title = "Kai Hub Updates!", Content = "Universal Script (v1.0.0)   [+] Blox Fruits [+] Settings [+] and MORE!"})
+local Paragraph = MainTab:CreateParagraph({Title = "Kai Team", Content = "Hello! Thank you for using our scripts. If you want to be updated on our scripts, join to our Discord Community."})
+local Paragraph = MainTab:CreateParagraph({Title = "Kai Hub Updates!", Content = "Universal Script (v1.0.0)   [+] Blox Fruits [+] Settings [+] and MORE!"})
 
 -- PlayerTab
  local Slider = PlayerTab:CreateSlider({
