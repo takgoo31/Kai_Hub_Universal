@@ -33,15 +33,26 @@ local Window = Rayfield:CreateWindow({
  local BloxFruitsTab = Window:CreateTab("Blox Fruits", 10709761889) -- Title, Image
 
 -- MainTab 
-local Section = MainTab:CreateSection("Discord Community")
-local Button = MainTab:CreateButton({
-   Name = "Join to our Discord Server!",
-   Description = "Copy our Discord Server Link.",
+local DiscordSection = MainTab:CreateSection("Discord Community")
+local DiscordButton = MainTab:CreateButton({
+   Name = "Join to our Discord Server! [CLICK HERE]",
    Callback = function()
    setclipboard("https://discord.com/invite/wDMPK3QAmY")
    end,
 })
-local Label = MainTab:CreateLabel("Copy our discord server link", 10723426722, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+
+local KaiSection = MainTab:CreateSection("Kai Hub | UNIVERSAL")
+local KaiParagraph = MainTab:CreateParagraph({
+        Title = "Welcome to Kai Hub!", 
+        Content = "Enjoy using our scripts, more updates and game-script will be added soon! To support us join to our discord community!
+        Happy Scriping!"
+    })
+local UpdatesParagraph = MainTab:CreateParagraph({
+        Title = "Kai Hub | Universal: UPDATES"
+        Content = "Current Version: 1.0.0
+        [+] Blox Fruits
+        [+] Settings"
+    })
 -- PlayerTab
  local Slider = PlayerTab:CreateSlider({
     Name = "WalkSpeed",
