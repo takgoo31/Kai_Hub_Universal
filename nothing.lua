@@ -38,7 +38,7 @@ Rayfield:Notify({
  local PlayerTab = Window:CreateTab("Player", 10747373176) -- Title, Image hehe
  local SettingsTab = Window:CreateTab("Settings", 10734950309) -- Title, Image ulit hehe
  local BloxFruitsTab = Window:CreateTab("Blox Fruits", 10709761889) -- Title, Image ulit 
- local PetSimulatorTab = Window:CreateTab("Pet Simulator", https://www.flaticon.com/free-icon/pawprint_1076877?term=pet&page=1&position=1&origin=search&related_id=1076877) -- Title at Image ulit wag kang ano d'yan!
+ local PetSimulatorTab = Window:CreateTab("Pet Simulator", 10747371901) -- Title at Image ulit wag kang ano d'yan!
  
 -- MainTab 
 local DiscordSection = MainTab:CreateSection("Discord Community")
