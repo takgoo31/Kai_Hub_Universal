@@ -1,20 +1,17 @@
-Exemple:
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/release.lua", true))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Unknown56406516401563456/Peacock-Lib/main/src.lua"))()
 
+local Window = Library:CreateLib {
+	name = "Kai Hub | Universal"
+}
 
-Button_Icon = "rbxassetid://137592432303285"
-              
-
-local Window = Fluent:CreateWindow({
-    Title = "AAAA",
-    SubTitle = "example",
-    TabWidth = 150,
-    Size = UDim2.fromOffset(400, 340),
-    Acrylic = false,
-    Theme = "Dark"
+local Tab = Window:NewTab({
+	name = "Main",
+	icon = "rbxassetid://3926305904"
 })
 
-local Main = Window:AddTab({
-    Title = "Main",
-    Icon = "home"
+local Button = Tab:NewButton({
+	name = "Join to our Discord Community"
 })
+Button:SetCallback(function()
+    setclipboard("https://discord.com/invite/wDMPK3QAmY")
+end)
