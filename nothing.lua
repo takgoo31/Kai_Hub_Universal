@@ -3,7 +3,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
     Name = "Kai Hub | Universal",
     LoadingTitle = "Welcome to Kai Hub!",
-    LoadingSubtitle = "by Kai Team",
+    LoadingSubtitle = "by: Kai Team",
     ConfigurationSaving = {
        Enabled = true,
        FolderName = nil, -- Create a custom folder for your hub/game
@@ -29,13 +29,13 @@ local Window = Rayfield:CreateWindow({
 Rayfield:Notify({
    Title = "Kai Hub | Universal",
    Content = "Welcome to Kai Hub!",
-   Duration = 8.5,
+   Duration = 6.5,
    Image = 10747371901,
 })
 Rayfield:Notify({
    Title = "Kai Hub | STAFFS",
    Content = "Kai Team: Takgoo, Kaizy, Chii",
-   Duration = 10.5,
+   Duration = 7.5,
    Image = 10734951847,
 })
 --Tabs
