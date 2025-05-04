@@ -46,7 +46,7 @@ local Paragraph = MainTab:CreateParagraph({Title = "Kai Team", Content = "Hello!
 local Paragraph = MainTab:CreateParagraph({Title = "Kai Hub Updates!", Content = "Universal Script (v1.0.0)   [+] Blox Fruits [+] Settings [+] and MORE!"})
 
 -- PlayerTab
--- PlayerTab
+-- Walkspeed
 local WalkSpeedEnabled = false
 local WalkSpeedValue = 16
 
@@ -81,18 +81,40 @@ local Slider = PlayerTab:CreateSlider({
     end,
 })
 
+-- Dash Length 
+local DashEnabled = false
+local DashLength = 10
 
- local Slider = PlayerTab:CreateSlider({
-    Name = "Dash length",
+-- Toggle for enabling Dash Length
+local DashToggle = PlayerTab:CreateToggle({
+    Name = "Enable Dash Length",
+    CurrentValue = false,
+    Flag = "EnableDashLength", -- Unique ID for saving/loading
+    Callback = function(Value)
+        DashEnabled = Value
+        if Value then
+            game.Players.LocalPlayer.Character:SetAttribute("DashLength", DashLength)
+        else
+            game.Players.LocalPlayer.Character:SetAttribute("DashLength", 10) -- Reset to default when toggled off
+        end
+    end,
+})
+
+-- Slider for controlling Dash Length (your existing slider)
+local DashSlider = PlayerTab:CreateSlider({
+    Name = "Dash Length",
     Range = {10, 1000},
     Increment = 1,
     Suffix = "Length",
     CurrentValue = 10,
-    Flag = "Slider2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Flag = "DashLengthSlider", -- Unique ID for saving/loading
     Callback = function(Value)
-     game.Players.LocalPlayer.Character:SetAttribute("DashLength", Value)
+        DashLength = Value
+        if DashEnabled then
+            game.Players.LocalPlayer.Character:SetAttribute("DashLength", Value)
+        end
     end,
- })
+})
 
  local Slider = PlayerTab:CreateSlider({
     Name = "Jump Height",
