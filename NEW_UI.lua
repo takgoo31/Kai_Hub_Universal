@@ -4,10 +4,16 @@ local Window = Library:CreateLib {
 	name = "Kai Hub | Universal"
 }
 
+--Tabs
 local Tab = Window:NewTab({
 	name = "Main",
 	icon = "rbxassetid://3926305904"
 })
+
+local Tab = Window:NewTab({
+	name = "Player",
+	icon = "rbxassetid://3926305904"
+	})
 
 local Button = Tab:NewButton({
 	name = "Join to our Discord Community"
