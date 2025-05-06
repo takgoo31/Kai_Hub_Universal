@@ -116,10 +116,10 @@ local DashToggle = PlayerTab:CreateToggle({
 -- Slider for controlling Dash Length (your existing slider)
 local DashSlider = PlayerTab:CreateSlider({
     Name = "Dash Length",
-    Range = {10, 1000},
+    Range = {10, 1200},
     Increment = 1,
     Suffix = "Length",
-    CurrentValue = 10,
+    CurrentValue = 20, -- The current dash length, sana naintindihan mo!
     Flag = "DashLengthSlider", -- Unique ID for saving/loading
     Callback = function(Value)
         DashLength = Value
@@ -151,7 +151,7 @@ local JumpToggle = PlayerTab:CreateToggle({
 -- Slider for controlling Jump Height
 local JumpSlider = PlayerTab:CreateSlider({
     Name = "Jump Height",
-    Range = {10, 500},
+    Range = {10, 550},
     Increment = 1,
     Suffix = "Height",
     CurrentValue = 50,
@@ -163,19 +163,55 @@ local JumpSlider = PlayerTab:CreateSlider({
         end
     end,
 })
+
 -- Game Scripts
 local READSection = GameScriptsTab:CreateSection("READ THIS!!!")
 local Paragraph = GameScriptsTab:CreateParagraph({Title = "READ : GAME SCRIPTS", Content = "Game Scripts will be in this Tab. Just find the game that you want and click it! MORE GAMES SUPPORT SOON!"})
 local BFRUITSection = GameScriptsTab:CreateSection("BLOX FRUITS")
 local Button = GameScriptsTab:CreateButton({
-   Name = "REDZ HUB",
-   Icon = "rewind",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
+        Name = "REDZ HUB",
+        Icon = "rewind",
+        Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
    end,
 })
+local Button = GameScriptsTab:CreateButton({
+        Name = "RUBU HUB",
+        Icon = "rewind",
+        Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RubuBF"))()
+        end,
+    })
+local Button = GameScriptsTab:CreateButton({
+        Name = "RO HUB",
+        Icon = "rewind",
+        Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RO-HUB-CODEX/RO-HUB/refs/heads/main/bloxfruits.lua"))()   
+        end,
+    })
 
-
+local Button = GameScriptsTab:CreateButton({
+        Name = "HoHo HUB",
+        Icon = "rewind",
+        Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+        end,
+    })
+local Button = GameScriptsTab:CreateButton({
+        Name = "RONIX HUB",
+        Icon = "rewind",
+        Callback = function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b5f968ca22436160479678e830766cc4.lua"))()
+        end,
+    })
+local DRAILSSection = GameScriptsTab:CreateSection("DEAD RAILS")
+local Button = GameScriptsTab:CreateButton({
+        Name = "SOLIX HUB",
+        Icon = "rewind",
+        Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/debunked69/Solixreworkkeysystem/refs/heads/main/solix%20new%20keyui.lua"))() 
+        end,
+    })
 
 
 
